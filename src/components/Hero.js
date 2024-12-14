@@ -43,7 +43,7 @@ const Hero = () => {
       </div>
 
       {/* Galería de imágenes */}
-      <div className="relative mt-36 flex justify-start items-center w-full h-full">
+      <div className="relative mt-44  flex justify-start items-center w-full h-full">
         {images.map((image, i) => {
           // Calcular la posición y escala de las imágenes
           const offset = (i - index + images.length) % images.length;
