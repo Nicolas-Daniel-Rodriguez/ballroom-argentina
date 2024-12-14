@@ -36,7 +36,7 @@ const Hero = () => {
         <p className="text-primary text-2xl font-bold">Bienvenidos a Ballroom Argentina</p>
 
         {/* Título grande */}
-        <h1 className="text-5xl font-bold mt-4">¡Da rienda suelta a tus movimientos!</h1>
+        <h1 className="text-6xl font-bold mt-4 max-w-2xl">¡Da rienda suelta a tus movimientos!</h1>
 
         {/* Párrafo corto */}
         <p className="text-lg mt-2 max-w-2xl">
@@ -75,7 +75,8 @@ const Hero = () => {
           );
         })}
       </div>
-    </div>
+      <div className="absolute bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-black to-transparent"></div>
+    </div>  
   );
 };
 
