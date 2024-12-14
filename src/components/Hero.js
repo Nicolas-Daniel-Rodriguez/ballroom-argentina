@@ -11,21 +11,14 @@ const images = [pasodoble, tres, cuatro, cinco, tango, pasodoble, tres, cuatro, 
 const Hero = () => {
   const [index, setIndex] = useState(0); // Iniciar desde la primera imagen
 
-  // Movimiento automático cada 3 segundos
-  useEffect(() => {
+   // Movimiento automático cada 3 segundos
+   useEffect(() => {
     const interval = setInterval(() => {
-      nextSlide();
+      setIndex((prevIndex) => (prevIndex + 1) % images.length); // Mueve al siguiente
     }, 3000); // Cambia la imagen cada 3 segundos
-    return () => clearInterval(interval);
-  }, [index]);
 
-  const nextSlide = () => {
-    setIndex((index + 1) % images.length); // Mueve al siguiente
-  };
-
-  const prevSlide = () => {
-    setIndex((index - 1 + images.length) % images.length); // Mueve al anterior
-  };
+    return () => clearInterval(interval); // Limpiar el intervalo al desmontar
+  }, []); // Este useEffect solo se ejecuta una vez al cargar el componente
 
   return (
     <div className="relative h-[calc(110vh-80px)] w-full flex justify-start items-center bg-gray-950 overflow-hidden">
