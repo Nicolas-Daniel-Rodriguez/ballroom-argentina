@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/ballroom-argentina/static/css/main.b8ad773a.css",
+    "main.js": "/ballroom-argentina/static/js/main.e48d3ee5.js",
+    "static/js/488.97a168bf.chunk.js": "/ballroom-argentina/static/js/488.97a168bf.chunk.js",
+    "static/media/4.png": "/ballroom-argentina/static/media/4.43655c64f7979f37ed7c.png",
+    "static/media/3.png": "/ballroom-argentina/static/media/3.7973e8a685b4049233ff.png",
+    "static/media/5.png": "/ballroom-argentina/static/media/5.20680a53d5c64c878106.png",
+    "static/media/tango.png": "/ballroom-argentina/static/media/tango.18605414cfb615980766.png",
+    "static/media/pasodoble.png": "/ballroom-argentina/static/media/pasodoble.2a42a225ef4132b0d6b6.png",
+    "index.html": "/ballroom-argentina/index.html",
+    "main.b8ad773a.css.map": "/ballroom-argentina/static/css/main.b8ad773a.css.map",
+    "main.e48d3ee5.js.map": "/ballroom-argentina/static/js/main.e48d3ee5.js.map",
+    "488.97a168bf.chunk.js.map": "/ballroom-argentina/static/js/488.97a168bf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b8ad773a.css",
+    "static/js/main.e48d3ee5.js"
+  ]
+}
