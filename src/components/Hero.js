@@ -32,7 +32,7 @@ const Hero = () => {
         <h1 className="text-4xl md:text-5xl  font-bold mt-4 max-w-2xl">¡Da rienda suelta a tus movimientos!</h1>
 
         {/* Párrafo corto */}
-        <p className="text-lg mt-2 max-w-2xl">
+        <p className="text-xl mt-2 max-w-2xl text-justify">
           Aprende la mejor danza deportiva en nuestra academia. Disfruta de clases de tango, pasodoble, cha cha cha, rumba y más, con instructores expertos.
         </p>
 
