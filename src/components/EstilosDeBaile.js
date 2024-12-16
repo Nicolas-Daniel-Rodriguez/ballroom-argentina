@@ -20,6 +20,7 @@ const EstilosDeBaile = () => {
   const [grupoActual, setGrupoActual] = useState(0);
   const [isInView, setIsInView] = useState(false);
   const sectionRef = useRef(null);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
@@ -60,12 +61,26 @@ const EstilosDeBaile = () => {
     }
   }, [progress]);
 
+  // Detectar si la pantalla es pequeña o mediana
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 1024); // lg breakpoint en Tailwind
+    };
+
+    handleResize(); // Ejecutar al cargar
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   const imagenesAMostrar = grupoActual === 0 ? grupo1 : grupo2;
   const textoGrupo = grupoActual === 0 ? "Latino" : "Standar";
   const ritmos = grupoActual === 0 ? ritmosLatino : ritmosStandar;
 
   return (
-    <div className="w-full bg-black text-white py-16 px-12" ref={sectionRef}>
+    <div className="w-full bg-black text-white py-16 px-4 md:px-12" ref={sectionRef}>
       <motion.div
         className="text-center mb-8"
         initial={{ opacity: 0 }}
@@ -74,14 +89,14 @@ const EstilosDeBaile = () => {
         transition={{ duration: 2, ease: "easeInOut" }}
       >
         <p className="text-primary font-bold text-2xl">Estilos de Bailes Competitivos</p>
-        <h2 className="text-5xl font-bold text-white mt-4 mb-20 max-w-3xl m-auto">
+        <h2 className="text-3xl md:text-4xl font-bold text-white mt-4 mb-20 max-w-3xl mx-auto px-8">
           ¡SUMÉRGETE EN EL RITMO: ¡DESCUBRE TU VIAJE DE BAILE!
         </h2>
       </motion.div>
 
-      <div className="w-full flex justify-center items-center space-x-4">
+      <div className="w-full flex justify-center items-center space-x-4 md:space-x-6">
         <motion.div
-          className="flex space-x-6"
+          className="overflow-x-hidden grid grid-cols-2 md:flex md:flex-row gap-10 px-10 pb-5 md:pt-10 "
           initial={{ opacity: 0 }}
           animate={{ opacity: isInView ? 1 : 0 }}
           exit={{ opacity: 0 }}
@@ -91,20 +106,23 @@ const EstilosDeBaile = () => {
           {imagenesAMostrar.map((imagen, i) => (
             <motion.div
               key={i}
-              className={`relative shadow-lg rounded-2xl w-60 h-96 bg-cover bg-center`}
+              className={`relative shadow-lg rounded-2xl w-32 md:w-60 h-72 md:h-96 bg-cover bg-center`}
               style={{
                 backgroundImage: `url(${imagen})`,
                 boxShadow: '0px 8px 20px rgba(255, 255, 255, 0.3)',
               }}
               initial={{ y: 0 }}
               animate={{
-                y: i === 1 || i === 3 ? -20 : i === 2 ? -40 : 0,
+                // Condicional para desactivar la animación en pantallas medianas y pequeñas
+                y: !isSmallScreen
+                  ? (i === 1 || i === 3 ? -20 : i === 2 ? -40 : 0)
+                  : 0,
               }}
               transition={{ duration: 1.5, ease: "easeInOut" }}
             >
               {/* Fondo gris translúcido con el texto centrado */}
               <div className="absolute bottom-0 w-full bg-gray-800 bg-opacity-50 text-center py-2">
-                <p className="text-white font-semibold text-xl">{ritmos[i]}</p> {/* Nombre del ritmo */}
+                <p className="text-white font-semibold text-sm md:text-xl">{ritmos[i]}</p> {/* Nombre del ritmo */}
               </div>
             </motion.div>
           ))}
@@ -112,7 +130,7 @@ const EstilosDeBaile = () => {
       </div>
 
       <motion.div
-        className="text-center mt-4 text-primary font-bold text-3xl tracking-widest"
+        className="text-center mt-4 text-primary font-bold  text-2xl md:text-3xl tracking-widest"
         initial={{ opacity: 0 }}
         animate={{ opacity: isInView ? 1 : 0 }}
         exit={{ opacity: 0 }}

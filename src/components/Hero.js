@@ -24,12 +24,12 @@ const Hero = () => {
     <div className="relative h-[calc(110vh-80px)] w-full flex justify-start items-center bg-gray-950 overflow-hidden">
       
       {/* Contenedor del contenido sobre el carrusel */}
-      <div className="absolute left-12 top-1/4 z-10 text-white">
+      <div className="absolute left-12 right-12 top-1/4 z-10 text-white max-w-lg">
         {/* Texto pequeño */}
         <p className="text-primary text-2xl font-bold">Bienvenidos a Ballroom Argentina</p>
 
         {/* Título grande */}
-        <h1 className="text-6xl font-bold mt-4 max-w-2xl">¡Da rienda suelta a tus movimientos!</h1>
+        <h1 className="text-4xl md:text-5xl  font-bold mt-4 max-w-2xl">¡Da rienda suelta a tus movimientos!</h1>
 
         {/* Párrafo corto */}
         <p className="text-lg mt-2 max-w-2xl">
@@ -60,7 +60,7 @@ const Hero = () => {
                 zIndex: isCenter ? 9 : 1, // Aseguramos que la imagen central esté arriba
               }}
               transition={{ duration: 0.8, ease: "easeInOut" }}
-              className="absolute w-4/12 h-full bg-cover bg-center rounded-br-full rounded-tl-full shadow-lg"
+              className="absolute w-8/12 md:w-4/12 h-full bg-cover bg-center rounded-br-full rounded-tl-full shadow-lg"
               style={{
                 backgroundImage: `url(${image})`,
               }}
