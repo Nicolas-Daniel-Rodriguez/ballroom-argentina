@@ -21,7 +21,7 @@ const Hero = () => {
   }, []); // Este useEffect solo se ejecuta una vez al cargar el componente
 
   return (
-    <div className="relative h-[calc(110vh-80px)] w-full flex justify-start items-center bg-gray-950 overflow-hidden">
+    <div className="relative h-[calc(110vh-80px)] w-full flex justify-start items-center bg-black overflow-hidden">
       
       {/* Contenedor del contenido sobre el carrusel */}
       <div className="absolute left-8 right-8 sm:left-12 sm:right-12 top-1/4 z-10 text-white max-w-lg">
@@ -68,7 +68,7 @@ const Hero = () => {
           );
         })}
       </div>
-      <div className="absolute bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-black to-transparent"></div>
+      <div className="absolute bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-gray-900 to-transparent"></div>
     </div>  
   );
 };

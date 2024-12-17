@@ -80,7 +80,7 @@ const EstilosDeBaile = () => {
   const ritmos = grupoActual === 0 ? ritmosLatino : ritmosStandar;
 
   return (
-    <div className="w-full bg-black text-white py-16 px-4 md:px-12" ref={sectionRef}>
+    <div className="w-full bg-gray-900 text-white py-16 px-4 md:px-12" ref={sectionRef}>
       <motion.div
         className="text-center mb-8"
         initial={{ opacity: 0 }}

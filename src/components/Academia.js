@@ -36,8 +36,8 @@ const Academia = () => {
 
   return (
     <>
-      <section className="relative w-full px-16 flex justify-center items-center bg-gray-950 overflow-hidden py-20">
-        <div className="absolute top-0 left-0 w-full h-1/4 bg-gradient-to-t from-transparent to-black"></div>
+      <section className="relative w-full px-16 flex justify-center items-center bg-black overflow-hidden py-20">
+      <div className="absolute top-0 left-0 w-full h-1/4 bg-gradient-to-t from-black to-gray-900"></div>
         <div className="flex flex-col lg:flex-row gap-16 justify-center items-center">
           {/* Columna izquierda: Texto */}
           <div
@@ -95,7 +95,7 @@ const Academia = () => {
       {/* Segunda Sección */}
       <section
         ref={secondSectionRef}
-        className="relative mt-[-3rem] w-full px-4 flex justify-center items-center bg-gray-950 overflow-hidden py-20"
+        className="relative mt-[-3rem] w-full px-4 flex justify-center items-center bg-black overflow-hidden py-20"
       >
         <div className="container mx-auto flex flex-col lg:flex-row items-center">
           {/* Imagen de la bailarina */}
@@ -230,6 +230,7 @@ const Academia = () => {
             </div>
           </motion.div>
         </div>
+        <div className="absolute bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-gray-900 to-transparent"></div>
       </section>
     </>
   );
