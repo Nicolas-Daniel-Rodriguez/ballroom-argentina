@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import EstilosDeBaile from './components/EstilosDeBaile';
 import Academia from './components/Academia';
 import Estadisticas from './components/Estadisticas';
+import Instructores from './components/Instructores';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <EstilosDeBaile />
       <Academia />
       <Estadisticas />
+      <Instructores />
     </div>
   );
 }
