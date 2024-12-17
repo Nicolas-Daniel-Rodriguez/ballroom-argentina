@@ -9,7 +9,8 @@ module.exports = {
         'primary': '#3490dc',
         'celeste': '#75a2b5',
         'azul':'#014961',
-        'dorado':'#968843'
+        'dorado':'#968843',
+        'cartel':'#10181b'
       },
     },
   },
