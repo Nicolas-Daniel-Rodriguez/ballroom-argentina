@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import img1 from "./../assets/img1.png"; // reemplazar con las rutas de tus imágenes
 import img2 from "./../assets/img2.png";
 import img3 from "./../assets/img3.png";
-import dancerImage from "./../assets/113.png";
+import dancerImage from "./../assets/113m.png";
 import ico1 from "./../assets/icono-baile.png";
 import ico2 from "./../assets/icono-campeones.png";
 
@@ -58,7 +58,7 @@ const Academia = () => {
           </div>
 
           {/* Columna derecha: Imágenes */}
-          <div className="flex flex-row items-center gap-6">
+          <div className="flex flex-row items-center gap-4 sm:gap-6">
             {/* Imagen 1 */}
             <motion.div
               ref={img1Ref}
@@ -66,7 +66,7 @@ const Academia = () => {
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: img1InView ? 1 : 0, y: img1InView ? 30 : -50 }}
             >
-              <img src={img1} alt="Imagen 1" className="w-full h-full" />
+              <img src={img1} alt="Imagen 1" className="w-full h-full rounded-lg shadow-lg" />
             </motion.div>
 
             {/* Imagen 2 (posición más baja) */}
@@ -76,7 +76,7 @@ const Academia = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: img2InView ? 1 : 0, y: img2InView ? -30 : 50 }}
             >
-              <img src={img2} alt="Imagen 2" className="w-full h-full" />
+              <img src={img2} alt="Imagen 2" className="w-full h-full rounded-lg shadow-lg" />
             </motion.div>
 
             {/* Imagen 3 */}
@@ -86,7 +86,7 @@ const Academia = () => {
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: img3InView ? 1 : 0, y: img3InView ? 30 : -50 }}
             >
-              <img src={img3} alt="Imagen 3" className="w-full h-full" />
+              <img src={img3} alt="Imagen 3" className="w-full h-full rounded-lg shadow-lg" />
             </motion.div>
           </div>
         </div>
@@ -95,7 +95,7 @@ const Academia = () => {
       {/* Segunda Sección */}
       <section
         ref={secondSectionRef}
-        className="relative mt-[-3rem] w-full px-16 flex justify-center items-center bg-gray-950 overflow-hidden py-20"
+        className="relative mt-[-3rem] w-full px-4 flex justify-center items-center bg-gray-950 overflow-hidden py-20"
       >
         <div className="container mx-auto flex flex-col lg:flex-row items-center">
           {/* Imagen de la bailarina */}
@@ -142,7 +142,7 @@ const Academia = () => {
                   transition: { duration: 1, delay: 0.2 },
                 }}
               >
-                <span className="mr-2">✔</span>
+                <span className="mr-2 text-primary">✔</span>
                 Practica como si nunca hubieras ganado
               </motion.li>
               <motion.li
@@ -154,7 +154,7 @@ const Academia = () => {
                   transition: { duration: 1, delay: 0.4 },
                 }}
               >
-                <span className="mr-2">✔</span>
+                <span className="mr-2 text-primary">✔</span>
                 Actúa como si nunca hubieras perdido
               </motion.li>
               <motion.li
@@ -166,7 +166,7 @@ const Academia = () => {
                   transition: { duration: 1, delay: 0.6 },
                 }}
               >
-                <span className="mr-2">✔</span>
+                <span className="mr-2 text-primary">✔</span>
                 Bailar con los pies es una cosa
               </motion.li>
               <motion.li
@@ -178,7 +178,7 @@ const Academia = () => {
                   transition: { duration: 1, delay: 0.8 },
                 }}
               >
-                <span className="mr-2">✔</span>
+                <span className="mr-2 text-primary">✔</span>
                 Bailar con el corazón es otra muy distinta.
               </motion.li>
             </ul>
@@ -186,7 +186,7 @@ const Academia = () => {
             {/* Tarjetas informativas */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <motion.div
-                className="bg-cartel p-6 rounded-lg shadow-lg"
+                className="bg-gray-800 p-6 rounded-lg shadow-lg"
                 initial={{ opacity: 0, y: 50 }}
                 animate={{
                   opacity: 1,
@@ -207,7 +207,7 @@ const Academia = () => {
                 </p>
               </motion.div>
               <motion.div
-                className="bg-cartel p-6 rounded-lg shadow-lg"
+                className="bg-gray-800 p-6 rounded-lg shadow-lg"
                 initial={{ opacity: 0, y: 50 }}
                 animate={{
                   opacity: 1,
