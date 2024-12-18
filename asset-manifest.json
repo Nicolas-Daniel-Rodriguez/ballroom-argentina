@@ -1,24 +1,26 @@
 {
   "files": {
-    "main.css": "/ballroom-argentina/static/css/main.a2962b78.css",
-    "main.js": "/ballroom-argentina/static/js/main.c722b88d.js",
+    "main.css": "/ballroom-argentina/static/css/main.48eb9624.css",
+    "main.js": "/ballroom-argentina/static/js/main.832c1993.js",
     "static/js/488.97a168bf.chunk.js": "/ballroom-argentina/static/js/488.97a168bf.chunk.js",
     "static/media/4.png": "/ballroom-argentina/static/media/4.43655c64f7979f37ed7c.png",
     "static/media/3.png": "/ballroom-argentina/static/media/3.7973e8a685b4049233ff.png",
     "static/media/5.png": "/ballroom-argentina/static/media/5.20680a53d5c64c878106.png",
     "static/media/tango.png": "/ballroom-argentina/static/media/tango.18605414cfb615980766.png",
     "static/media/pasodoble.png": "/ballroom-argentina/static/media/pasodoble.2a42a225ef4132b0d6b6.png",
-    "static/media/113m.png": "/ballroom-argentina/static/media/113m.15171fa52dbb0d4851fb.png",
+    "static/media/Cristian.png": "/ballroom-argentina/static/media/Cristian.abb8d3ed7e3137eb8ac0.png",
+    "static/media/marina.png": "/ballroom-argentina/static/media/marina.6f2c22c9062585a426eb.png",
+    "static/media/113m.png": "/ballroom-argentina/static/media/113m.6d442cdd4cd4f709136e.png",
     "static/media/Logo-transp.png": "/ballroom-argentina/static/media/Logo-transp.656e297379b3f730919e.png",
     "static/media/icono-campeones.png": "/ballroom-argentina/static/media/icono-campeones.f88db057b262e13d5de7.png",
     "static/media/icono-baile.png": "/ballroom-argentina/static/media/icono-baile.a048a8481d513849abb9.png",
     "index.html": "/ballroom-argentina/index.html",
-    "main.a2962b78.css.map": "/ballroom-argentina/static/css/main.a2962b78.css.map",
-    "main.c722b88d.js.map": "/ballroom-argentina/static/js/main.c722b88d.js.map",
+    "main.48eb9624.css.map": "/ballroom-argentina/static/css/main.48eb9624.css.map",
+    "main.832c1993.js.map": "/ballroom-argentina/static/js/main.832c1993.js.map",
     "488.97a168bf.chunk.js.map": "/ballroom-argentina/static/js/488.97a168bf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2962b78.css",
-    "static/js/main.c722b88d.js"
+    "static/css/main.48eb9624.css",
+    "static/js/main.832c1993.js"
   ]
 }
