@@ -24,7 +24,7 @@ const Hero = () => {
     <div className="relative h-[calc(110vh-80px)] w-full flex justify-start items-center bg-black overflow-hidden">
       
       {/* Contenedor del contenido sobre el carrusel */}
-      <div className="absolute left-8 right-8 sm:left-12 sm:right-12 top-1/4 z-10 text-white max-w-lg">
+      <div className="absolute left-16 right-16 sm:left-12 sm:right-12 top-1/4 z-10 text-white max-w-lg">
         {/* Texto pequeño */}
         <p className="text-primary text-2xl font-bold">Bienvenidos a Ballroom Argentina</p>
 

@@ -114,7 +114,7 @@ const Academia = () => {
 
           {/* Texto y contenido */}
           <motion.div
-            className="w-full lg:w-1/2 px-6 lg:px-12"
+            className="w-full lg:w-1/2 px-16 "
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: secondSectionInView ? 1 : 0, y: secondSectionInView ? 0 : 50 }}
             transition={{ duration: 1.5 }}
@@ -184,7 +184,7 @@ const Academia = () => {
             </ul>
 
             {/* Tarjetas informativas */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-24">
               <motion.div
                 className="bg-gray-800 p-6 rounded-lg shadow-lg"
                 initial={{ opacity: 0, y: 50 }}
@@ -230,7 +230,7 @@ const Academia = () => {
             </div>
           </motion.div>
         </div>
-        <div className="absolute bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-gray-900 to-transparent"></div>
+        <div className="absolute bottom-0 left-0 w-full h-1/6 bg-gradient-to-t from-gray-900 to-transparent"></div>
       </section>
     </>
   );

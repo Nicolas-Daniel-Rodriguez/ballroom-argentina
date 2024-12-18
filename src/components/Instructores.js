@@ -11,8 +11,8 @@ const Instructores = () => {
   // Información de los instructores
   const instructores = [
     {
-      nombre: "Marcus Ramirez",
-      especialidad: "Coreógrafo de Hip-hop",
+      nombre: "Cristian Javier Rodríguez",
+      especialidad: "Campeón de Ballroom",
       imagen: "https://via.placeholder.com/300x300", // Reemplaza con la URL de tu imagen
       redes: {
         facebook: "#",
@@ -21,8 +21,8 @@ const Instructores = () => {
       },
     },
     {
-      nombre: "Olivia Mitchell",
-      especialidad: "Instructora de Ballet",
+      nombre: "Marina Gonzalez",
+      especialidad: "Campeona de Ballroom",
       imagen: "https://via.placeholder.com/300x300", // Reemplaza con la URL de tu imagen
       redes: {
         facebook: "#",
@@ -33,13 +33,13 @@ const Instructores = () => {
   ];
 
   return (
-    <div className="bg-black text-white py-16 px-4">
+    <div className="bg-black text-white py-16 px-16">
       {/* Sección principal */}
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-primary text-lg font-semibold">CONOCE A NUESTROS INSTRUCTORES</h2>
-          <h1 className="text-4xl font-bold text-white mt-2">Expertos apasionados en la danza</h1>
-          <p className="text-primary mt-4">
+          <h2 className="text-primary text-2xl font-bold">CONOCE A NUESTROS INSTRUCTORES</h2>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mt-2">Expertos apasionados en la danza</h1>
+          <p className="text-primary text-xl text-justify mt-4">
             Presentamos a nuestros talentosos y experimentados instructores de danza, 
             dedicados a ayudar a los estudiantes a alcanzar sus metas.
           </p>
@@ -90,12 +90,12 @@ const Instructores = () => {
           ))}
         </div>
 
-        {/* Botón "Ver más" */}
+        {/* Botón "Ver más" 
         <div className="text-center mt-12">
           <button className="bg-primary text-gray-900 font-semibold py-2 px-6 rounded hover:bg-cyan-500 transition">
             Ver más
           </button>
-        </div>
+        </div>*/}
       </div>
     </div>
   );

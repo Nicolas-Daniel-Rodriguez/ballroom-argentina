@@ -17,7 +17,7 @@ const Estadisticas = () => {
   });
 
   return (
-    <div ref={ref} className="bg-gray-900 text-white py-28">
+    <div ref={ref} className="bg-gray-900 text-white pt-24 pb-36">
       <div className="container mx-auto flex flex-col md:flex-row justify-center items-center gap-10">
         {datos.map((item, index) => (
           <div
@@ -31,6 +31,7 @@ const Estadisticas = () => {
           </div>
         ))}
       </div>
+      <div className="absolute left-0 w-full h-1/4 bg-gradient-to-t from-black to-gray-900"></div>
     </div>
   );
 };
