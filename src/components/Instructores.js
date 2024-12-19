@@ -2,6 +2,7 @@ import React from "react";
 import { useInView } from "react-intersection-observer";
 import Cris from "./../assets/Cristian.png";
 import Mari from "./../assets/marina.png";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Instructores = () => {
   // Hook para detectar cuando el componente es visible
@@ -18,7 +19,7 @@ const Instructores = () => {
       imagen: Cris, 
       redes: {
         facebook: "#",
-        twitter: "#",
+        instagram: "#",
         youtube: "#",
       },
     },
@@ -28,7 +29,7 @@ const Instructores = () => {
       imagen: Mari, 
       redes: {
         facebook: "#",
-        twitter: "#",
+        instagram: "#",
         youtube: "#",
       },
     },
@@ -41,7 +42,7 @@ const Instructores = () => {
         <div className="text-center mb-12">
           <h2 className="text-primary text-2xl font-bold">CONOCE A NUESTROS INSTRUCTORES</h2>
           <h1 className="text-4xl md:text-5xl font-bold text-white mt-2">Expertos apasionados en la danza</h1>
-          <p className="text-primary text-xl text-justify mt-4 mb-4 max-w-2xl mx-auto">
+          <p className="text-xl text-justify mt-4 mb-4 max-w-2xl mx-auto">
             Presentamos a nuestros talentosos y experimentados instructores de danza, 
             dedicados a ayudar a los estudiantes a alcanzar sus metas.
           </p>
@@ -50,14 +51,14 @@ const Instructores = () => {
         {/* Contenedor de los instructores */}
 <div
   ref={ref}
-  className={`flex flex-wrap justify-around gap-10 ${
+  className={`grid grid-cols-2 md:flex md:flex-row flex-wrap justify-around gap-10 ${
     inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
   } transition-all duration-1000`}
 >
   {instructores.map((instructor, index) => (
     <div
       key={index}
-      className="bg-gray-800 rounded-lg shadow-lg overflow-hidden shadow-white transform transition-transform duration-300 hover:scale-110"
+      className="bg-gray-800 mb-11 rounded-lg shadow-lg overflow-hidden shadow-white transform transition-transform duration-300 hover:scale-110"
     >
       <div className="overflow-hidden">
         <img
@@ -77,10 +78,10 @@ const Instructores = () => {
             <i className="fab fa-facebook-f"></i>
           </a>
           <a
-            href={instructor.redes.twitter}
+            href={instructor.redes.instagram}
             className="text-gray-400 hover:text-primary"
           >
-            <i className="fab fa-twitter"></i>
+            <i className="fab fa-instagram"></i>
           </a>
           <a
             href={instructor.redes.youtube}
@@ -102,6 +103,7 @@ const Instructores = () => {
           </button>
         </div>*/}
       </div>
+      <div className="absolute left-0 w-full h-1/6 bg-gradient-to-t from-gray-900 to-black"></div>
     </div>
   );
 };
