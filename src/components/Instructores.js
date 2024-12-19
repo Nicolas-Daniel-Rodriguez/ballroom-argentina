@@ -58,7 +58,7 @@ const Instructores = () => {
   {instructores.map((instructor, index) => (
     <div
       key={index}
-      className="bg-gray-800 mb-11 rounded-lg shadow-lg overflow-hidden shadow-white transform transition-transform duration-300 hover:scale-110"
+      className="bg-gray-800 mb-10 rounded-lg shadow-lg overflow-hidden shadow-white transform transition-transform duration-300 hover:scale-110"
     >
       <div className="overflow-hidden">
         <img
