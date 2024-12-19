@@ -1,26 +1,35 @@
 {
   "files": {
-    "main.css": "/ballroom-argentina/static/css/main.48eb9624.css",
-    "main.js": "/ballroom-argentina/static/js/main.832c1993.js",
+    "main.css": "/ballroom-argentina/static/css/main.7274ea39.css",
+    "main.js": "/ballroom-argentina/static/js/main.25b9f7e6.js",
     "static/js/488.97a168bf.chunk.js": "/ballroom-argentina/static/js/488.97a168bf.chunk.js",
     "static/media/4.png": "/ballroom-argentina/static/media/4.43655c64f7979f37ed7c.png",
     "static/media/3.png": "/ballroom-argentina/static/media/3.7973e8a685b4049233ff.png",
     "static/media/5.png": "/ballroom-argentina/static/media/5.20680a53d5c64c878106.png",
     "static/media/tango.png": "/ballroom-argentina/static/media/tango.18605414cfb615980766.png",
     "static/media/pasodoble.png": "/ballroom-argentina/static/media/pasodoble.2a42a225ef4132b0d6b6.png",
+    "static/media/fa-solid-900.ttf": "/ballroom-argentina/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
     "static/media/Cristian.png": "/ballroom-argentina/static/media/Cristian.abb8d3ed7e3137eb8ac0.png",
+    "static/media/fa-brands-400.ttf": "/ballroom-argentina/static/media/fa-brands-400.1815e00441357e01619e.ttf",
     "static/media/marina.png": "/ballroom-argentina/static/media/marina.6f2c22c9062585a426eb.png",
+    "static/media/fa-solid-900.woff2": "/ballroom-argentina/static/media/fa-solid-900.2463b90d9a316e4e5294.woff2",
     "static/media/113m.png": "/ballroom-argentina/static/media/113m.6d442cdd4cd4f709136e.png",
     "static/media/Logo-transp.png": "/ballroom-argentina/static/media/Logo-transp.656e297379b3f730919e.png",
+    "static/media/fa-brands-400.woff2": "/ballroom-argentina/static/media/fa-brands-400.c210719e60948b211a12.woff2",
+    "static/media/fa-regular-400.ttf": "/ballroom-argentina/static/media/fa-regular-400.914997e1bdfc990d0897.ttf",
+    "static/media/Logo-transp-blanco.png": "/ballroom-argentina/static/media/Logo-transp-blanco.cbf0619725a9d1d34e6f.png",
+    "static/media/fa-regular-400.woff2": "/ballroom-argentina/static/media/fa-regular-400.89999bdf5d835c012025.woff2",
     "static/media/icono-campeones.png": "/ballroom-argentina/static/media/icono-campeones.f88db057b262e13d5de7.png",
     "static/media/icono-baile.png": "/ballroom-argentina/static/media/icono-baile.a048a8481d513849abb9.png",
+    "static/media/fa-v4compatibility.ttf": "/ballroom-argentina/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
+    "static/media/fa-v4compatibility.woff2": "/ballroom-argentina/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/ballroom-argentina/index.html",
-    "main.48eb9624.css.map": "/ballroom-argentina/static/css/main.48eb9624.css.map",
-    "main.832c1993.js.map": "/ballroom-argentina/static/js/main.832c1993.js.map",
+    "main.7274ea39.css.map": "/ballroom-argentina/static/css/main.7274ea39.css.map",
+    "main.25b9f7e6.js.map": "/ballroom-argentina/static/js/main.25b9f7e6.js.map",
     "488.97a168bf.chunk.js.map": "/ballroom-argentina/static/js/488.97a168bf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.48eb9624.css",
-    "static/js/main.832c1993.js"
+    "static/css/main.7274ea39.css",
+    "static/js/main.25b9f7e6.js"
   ]
 }
